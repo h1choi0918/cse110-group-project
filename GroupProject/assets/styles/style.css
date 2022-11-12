@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    background-color: #FFFFFF;
+    background-color: #AF85F4;
 }
 h1 {
     position: relative;
@@ -28,7 +28,6 @@ h1 {
     min-height: 60vh;
     border: 0;
     border-radius: 5px;
-    background-color: #FFFFFF;
     padding: 20px;
     margin: 0 auto;
 }
@@ -40,22 +39,27 @@ h1 {
 }
 .login-input {
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     border: none;
     border-radius: 5px;
     padding: 10px;
     width: 100%;
-    background-color: #F8F8F8;
+    background-color: #C5ACEF;
 }
 .submit-btn {
+    display: inline-block;
     color: #EEEEEE;
     font-size: 14px;
-    background-color: #1bbc9b;
+    background-color: #414BB2;
+    text-align: center;
     margin-bottom: 30px;
+    margin-left: 12px;
+    margin-right: 20px;
     padding: 10px;
     border: none;
     border-radius: 5px;
-    width: 100%;
+    width: 40%;
 }
 
 .links {
@@ -63,7 +67,7 @@ h1 {
 }
 .links a {
     font-size: 12px;
-    color: #9b9b9b;
+    color: black;
 }
 
 .planned-event {
@@ -95,7 +99,7 @@ h1 {
     margin: 0;
 }
 .plan-event-btn {
-    background-color: #9b9b9b;
+    background-color: #414BB2;
     border-radius: 8px;
     color: #FFFFFF;
     cursor: pointer;
@@ -110,7 +114,7 @@ h1 {
 }
 .plan-event-btn:hover,
 .plan-event-btn:focus {
-  background-color: #F082AC;
+    background-color: #21287e;
 }
 
 .img-btn:hover {
@@ -127,7 +131,6 @@ h1 {
     overflow: hidden;
     padding-top: 60px;
     transition: 0.5s;
-    background-color: linen;
 }
 .sidebar a {
     padding: 8px 8px 8px 32px;
@@ -152,7 +155,7 @@ h1 {
 .open-btn {
     border: none;
     border-radius: 5px;
-    background-color: white;
+    background-color: #AF85F4;
 }
 #main {
     transition: margin-left .5s;
@@ -216,7 +219,7 @@ h1 {
 .save-btn {
     color: #EEEEEE;
     font-size: 14px;
-    background-color: #1bbc9b;
+    background-color: #414BB2;
     margin-top: 30px;
     padding: 10px;
     border: none;
@@ -225,6 +228,24 @@ h1 {
 }
 .save-btn:hover,
 .save-btn:focus {
-  background-color: #F082AC;
-  cursor: pointer;
+    background-color: #21287e;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+        'header header header header header'
+        'main main main icon1 icon2'
+        'desc desc desc icon1 icon2';
+    padding: 10px;
+    justify-content: space-between;
+    width: 50vmax;
+    height: 20vmax;
+}
+.image {
+    background-color: lightgray;
+    display: block;
+    margin: 0 auto;
+    grid-area: header;
 }
